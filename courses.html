@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Degree Programs & Courses | Rajiv Gandhi Mahavidyalaya, Jagdishpur, Amethi</title>
+  <meta name="description" content="Academic courses at Rajiv Gandhi Mahavidyalaya, Jagdishpur, Amethi: B.A. (Arts Faculty), Drawing (Fine Art), Music, M.A. Hindi, M.A. Sociology, and UPRTOU Open University Study Center.">
+  <meta name="keywords" content="Rajiv Gandhi Mahavidyalaya courses, B.A. Jagdishpur, M.A. Hindi, M.A. Sociology, Drawing Fine Art, UPRTOU study center, competitive exam coaching">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Degree Programs & Courses | Rajiv Gandhi Mahavidyalaya">
+  <meta property="og:description" content="Explore undergraduate and postgraduate degrees and open university courses at Rajiv Gandhi Mahavidyalaya, Jagdishpur.">
+  <meta property="og:image" content="images/college-entrance.jpg">
+
+  <!-- Google Fonts & Font Awesome 6 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .course-search-container {
+      max-width: 580px;
+      margin: 0 auto 2.5rem;
+      position: relative;
+    }
+    .course-search-box {
+      width: 100%;
+      padding: 0.95rem 1.25rem 0.95rem 3rem;
+      border: 2px solid var(--bg-alt);
+      border-radius: var(--radius-full);
+      font-size: 1rem;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .course-search-box:focus {
+      outline: none;
+      border-color: var(--primary-bright);
+      box-shadow: 0 0 0 4px rgba(21, 101, 192, 0.12);
+    }
+    .search-icon-inside {
+      position: absolute;
+      left: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+    .course-detail-specs {
+      background-color: var(--bg-main);
+      padding: 1rem;
+      border-radius: var(--radius-md);
+      margin: 1rem 0;
+      font-size: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .course-detail-specs strong {
+      color: var(--primary-navy);
+    }
+    .course-tags-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+    .course-mini-tag {
+      background: rgba(11, 79, 138, 0.08);
+      color: var(--primary-blue);
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Notification & Contact Bar -->
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-contact">
+        <a href="tel:+919120374882"><i class="fas fa-phone-alt"></i> Principal: +91 91203 74882</a>
+        <a href="tel:+919026674882"><i class="fas fa-phone-alt"></i> CEO: +91 90266 74882</a>
+        <a href="mailto:admissions@rgdcjagdishpur.edu.in"><i class="fas fa-envelope"></i> admissions@rgdcjagdishpur.edu.in</a>
+      </div>
+      <div class="topbar-news">
+        <span class="ticker-badge"><i class="fas fa-bullhorn"></i> Notice</span>
+        <span class="ticker-text">B.A. (Arts), M.A. (Hindi & Sociology) & U.P. Rajarshi Tandon Open University Admissions Open</span>
+      </div>
+      <div class="topbar-links">
+        <div class="topbar-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Rajiv Gandhi Mahavidyalaya Home">
+        <div class="brand-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">RAJIV GANDHI</span>
+          <span class="brand-sub">MAHAVIDYALAYA &bull; JAGDISHPUR, AMETHI</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <button class="mobile-close-btn" id="mobileClose" aria-label="Close menu">&times;</button>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="courses.html" class="nav-link active">Courses</a>
+        <a href="faculty.html" class="nav-link">Leadership & Faculty</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="nav-cta">
+          <a href="contact.html#enquiry" class="btn btn-primary btn-sm">Apply Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Page Header Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Academic Programs</span>
+      </div>
+      <h1 class="page-hero-title">Academic Courses & Offerings</h1>
+      <p class="page-hero-subtitle">
+        Undergraduate, Postgraduate, and Open University programs affiliated with Dr. Ram Manohar Lohia Awadh University, Ayodhya & U.P. Rajarshi Tandon Open University.
+      </p>
+    </div>
+  </section>
+
+  <!-- Courses Main Directory Section -->
+  <section class="section" id="coursesList">
+    <div class="container">
+
+      <!-- Live Search Box -->
+      <div class="course-search-container">
+        <i class="fas fa-search search-icon-inside"></i>
+        <input 
+          type="text" 
+          id="courseSearchInput" 
+          class="course-search-box" 
+          placeholder="Search by degree name, subject, or keyword (e.g. Hindi, Drawing, Sociology, UPRTOU)..."
+        >
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="courses-filter" id="coursesFilter">
+        <button class="filter-btn active" data-filter="all">All Programs</button>
+        <button class="filter-btn" data-filter="ba">Bachelor of Arts (B.A.)</button>
+        <button class="filter-btn" data-filter="arts">Fine Arts & Music</button>
+        <button class="filter-btn" data-filter="postgrad">Postgraduate (M.A.)</button>
+        <button class="filter-btn" data-filter="open">UPRTOU Open Learning</button>
+        <button class="filter-btn" data-filter="coaching">Competitive Guidance</button>
+      </div>
+
+      <!-- Course Cards Grid -->
+      <div class="courses-grid">
+
+        <!-- Course 1: Bachelor of Arts -->
+        <article class="course-card" id="ba" data-category="ba">
+          <div class="course-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" 
+              alt="Bachelor of Arts at Rajiv Gandhi Mahavidyalaya" 
+              class="course-img"
+              loading="lazy"
+            >
+            <span class="course-tag">Arts Faculty</span>
+            <span class="course-duration"><i class="far fa-clock"></i> 3 Years</span>
+          </div>
+          <div class="course-body">
+            <span class="course-code">DEGREE: B.A. &bull; Dr. RMLAU Affiliated</span>
+            <h3 class="course-title">Bachelor of Arts (B.A.)</h3>
+            <p class="course-desc">
+              Classes are organized for all subjects of the Bachelor of Arts faculty. Recognizing the need for central and state-level competitive examinations, the founder resolved to begin coaching for them within the Arts faculty.
+            </p>
+            <div class="course-detail-specs">
+              <div><strong>Core Subjects:</strong> Hindi Literature, English, Sanskrit, Sociology, Political Science, History, Economics, Education, Home Science, Geography</div>
+              <div><strong>Integrated Feature:</strong> Coaching for Central & State-level Competitive Examinations</div>
+              <div><strong>Eligibility:</strong> 10+2 / Intermediate in any stream from a recognized board</div>
+            </div>
+            <div class="course-tags-list">
+              <span class="course-mini-tag">Arts Faculty</span>
+              <span class="course-mini-tag">Competitive Coaching</span>
+              <span class="course-mini-tag">Full Subjects</span>
+            </div>
+            <div class="course-meta">
+              <span class="course-seats"><i class="fas fa-check-circle" style="color: var(--success);"></i> Permanent Affiliation</span>
+              <a href="contact.html?course=ba-arts#enquiry" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 2: Drawing (Fine Art) -->
+        <article class="course-card" id="fine-arts" data-category="arts">
+          <div class="course-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80" 
+              alt="Drawing Fine Art at Rajiv Gandhi Mahavidyalaya" 
+              class="course-img"
+              loading="lazy"
+            >
+            <span class="course-tag">Undergraduate</span>
+            <span class="course-duration"><i class="far fa-clock"></i> 3 Years</span>
+          </div>
+          <div class="course-body">
+            <span class="course-code">UG-DRAWING &bull; Provisional Approval</span>
+            <h3 class="course-title">Drawing (Fine Art) - UG</h3>
+            <p class="course-desc">
+              Provisional approval granted by Dr. Ram Manohar Lohia Awadh University. Focuses on studio sketching, watercolour techniques, canvas painting, Indian classical art, and creative visual expression.
+            </p>
+            <div class="course-detail-specs">
+              <div><strong>Curriculum:</strong> Freehand Sketching, Still Life, Landscape, Canvas Painting, Art History</div>
+              <div><strong>Practical Work:</strong> Dedicated Studio Hours & Annual Campus Art Exhibitions</div>
+              <div><strong>Eligibility:</strong> 10+2 / Intermediate in any discipline</div>
+            </div>
+            <div class="course-tags-list">
+              <span class="course-mini-tag">Painting</span>
+              <span class="course-mini-tag">Studio Practice</span>
+              <span class="course-mini-tag">Provisional Approval</span>
+            </div>
+            <div class="course-meta">
+              <span class="course-seats"><i class="fas fa-palette"></i> Fine Art Studio</span>
+              <a href="contact.html?course=drawing#enquiry" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 3: Music -->
+        <article class="course-card" id="music" data-category="arts">
+          <div class="course-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" 
+              alt="Music Course at Rajiv Gandhi Mahavidyalaya" 
+              class="course-img"
+              loading="lazy"
+            >
+            <span class="course-tag">Undergraduate</span>
+            <span class="course-duration"><i class="far fa-clock"></i> 3 Years</span>
+          </div>
+          <div class="course-body">
+            <span class="course-code">UG-MUSIC &bull; Provisional Approval</span>
+            <h3 class="course-title">Music (Vocal & Instrumental)</h3>
+            <p class="course-desc">
+              Provisional university approval granted. Cultivates understanding of classical Hindustani ragas, vocal modulation, folk music heritage of Awadh, harmonium, and traditional rhythm accompaniment.
+            </p>
+            <div class="course-detail-specs">
+              <div><strong>Curriculum:</strong> Classical Ragas, Swar Sadhana, Folk Songs, Harmonium & Tabla Basics</div>
+              <div><strong>Practical Focus:</strong> Daily Riyaz sessions & collegiate cultural fest performances</div>
+              <div><strong>Eligibility:</strong> 10+2 / Intermediate in any stream</div>
+            </div>
+            <div class="course-tags-list">
+              <span class="course-mini-tag">Vocal Music</span>
+              <span class="course-mini-tag">Classical Ragas</span>
+              <span class="course-mini-tag">Awadh Folk</span>
+            </div>
+            <div class="course-meta">
+              <span class="course-seats"><i class="fas fa-music"></i> Riyaz Chamber</span>
+              <a href="contact.html?course=music#enquiry" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 4: M.A. Hindi Literature -->
+        <article class="course-card" id="ma-hindi" data-category="postgrad">
+          <div class="course-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80" 
+              alt="M.A. Hindi Literature at Rajiv Gandhi Mahavidyalaya" 
+              class="course-img"
+              loading="lazy"
+            >
+            <span class="course-tag">Postgraduate</span>
+            <span class="course-duration"><i class="far fa-clock"></i> 2 Years</span>
+          </div>
+          <div class="course-body">
+            <span class="course-code">PG-HINDI &bull; 4 Semesters</span>
+            <h3 class="course-title">M.A. Hindi Literature</h3>
+            <p class="course-desc">
+              Provisional approval granted for postgraduate studies in Hindi. In-depth analysis of classical poetic traditions, modern prose, drama, linguistics, literary criticism, and regional literary history.
+            </p>
+            <div class="course-detail-specs">
+              <div><strong>Key Areas:</strong> Bhakti Kavya, Chhayavad, Modern Hindi Fiction, Natak, Bhasha Vigyan</div>
+              <div><strong>Eligibility:</strong> Bachelor's Degree (B.A.) with Hindi or equivalent from recognized university</div>
+              <div><strong>Career Roles:</strong> Higher Education Lecturer, Translator, Content Writer, Civil Services</div>
+            </div>
+            <div class="course-tags-list">
+              <span class="course-mini-tag">Hindi Sahitya</span>
+              <span class="course-mini-tag">Postgraduate</span>
+              <span class="course-mini-tag">Research</span>
+            </div>
+            <div class="course-meta">
+              <span class="course-seats"><i class="fas fa-book"></i> PG Approved</span>
+              <a href="contact.html?course=ma-hindi#enquiry" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 5: M.A. Sociology -->
+        <article class="course-card" id="ma-soc" data-category="postgrad">
+          <div class="course-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" 
+              alt="M.A. Sociology at Rajiv Gandhi Mahavidyalaya" 
+              class="course-img"
+              loading="lazy"
+            >
+            <span class="course-tag">Postgraduate</span>
+            <span class="course-duration"><i class="far fa-clock"></i> 2 Years</span>
+          </div>
+          <div class="course-body">
+            <span class="course-code">PG-SOCIOLOGY &bull; 4 Semesters</span>
+            <h3 class="course-title">M.A. Sociology</h3>
+            <p class="course-desc">
+              Provisional approval granted. Comprehensive study of Indian social structure, rural society, sociopolitical transformations, community welfare, and quantitative/qualitative sociological research.
+            </p>
+            <div class="course-detail-specs">
+              <div><strong>Key Areas:</strong> Sociological Thinkers, Rural Sociology, Social Stratification, Research Methods</div>
+              <div><strong>Eligibility:</strong> Bachelor's Degree (B.A. / B.Sc. / B.Com) from a recognized university</div>
+              <div><strong>Career Roles:</strong> Social Welfare Officer, NGO Administrator, Academician, Public Policy</div>
+            </div>
+            <div class="course-tags-list">
+              <span class="course-mini-tag">Samajshastra</span>
+              <span class="course-mini-tag">Rural Studies</span>
+              <span class="course-mini-tag">Community Action</span>
+            </div>
+            <div class="course-meta">
+              <span class="course-seats"><i class="fas fa-users"></i> PG Approved</span>
+              <a href="contact.html?course=ma-sociology#enquiry" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 6: UPRTOU Study Center -->
+        <article class="course-card" id="uprtou" data-category="open">
+          <div class="course-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" 
+              alt="U.P. Rajarshi Tandon Open University Study Center" 
+              class="course-img"
+              loading="lazy"
+            >
+            <span class="course-tag">Open Learning</span>
+            <span class="course-duration"><i class="far fa-clock"></i> UG / PG / Diplomas</span>
+          </div>
+          <div class="course-body">
+            <span class="course-code">UPRTOU STUDY CENTER &bull; Distance Education</span>
+            <h3 class="course-title">U.P. Rajarshi Tandon Open University</h3>
+            <p class="course-desc">
+              The college proudly hosts a dedicated study center of <strong>U.P. Rajarshi Tandon Open University</strong>, so local youth no longer need to travel far for higher education. Offers a wide range of degree, diploma, and certificate programs.
+            </p>
+            <div class="course-detail-specs">
+              <div><strong>Programs Offered:</strong> Undergraduate & Postgraduate Degrees, Professional Diplomas, Certificates</div>
+              <div><strong>Benefits:</strong> Flexible schedule, self-study material, weekend contact sessions, exam center in Jagdishpur</div>
+              <div><strong>Eligibility:</strong> Depends on specific course chosen (from 10+2 to Graduate level)</div>
+            </div>
+            <div class="course-tags-list">
+              <span class="course-mini-tag">Distance Degree</span>
+              <span class="course-mini-tag">Diplomas</span>
+              <span class="course-mini-tag">Certificates</span>
+            </div>
+            <div class="course-meta">
+              <span class="course-seats"><i class="fas fa-university"></i> Official Center</span>
+              <a href="contact.html?course=uprtou#enquiry" class="btn btn-primary btn-sm">Enquire Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 7: Competitive Examination Coaching Cell -->
+        <article class="course-card" id="coaching" data-category="coaching ba">
+          <div class="course-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" 
+              alt="Competitive Examination Coaching at Rajiv Gandhi Mahavidyalaya" 
+              class="course-img"
+              loading="lazy"
+            >
+            <span class="course-tag">Guidance Cell</span>
+            <span class="course-duration"><i class="far fa-clock"></i> Concurrent with Degree</span>
+          </div>
+          <div class="course-body">
+            <span class="course-code">COMPETITIVE CELL &bull; Arts Faculty Initiative</span>
+            <h3 class="course-title">Competitive Examination Guidance Cell</h3>
+            <p class="course-desc">
+              Recognizing the need for central and state-level competitive examinations, founder Pt. Shyam Lal Tiwari resolved to begin coaching for them within the Arts faculty. Provides regular mock tests, GK sessions, and interview preparation.
+            </p>
+            <div class="course-detail-specs">
+              <div><strong>Exam Targets:</strong> UPPCS, UPSSSC, SSC (CGL/CHSL), Railway, Banking, TET / Super TET</div>
+              <div><strong>Pedagogy:</strong> Current affairs discussions, answer writing practice, aptitude & reasoning modules</div>
+              <div><strong>Eligibility:</strong> Open to all enrolled students of Rajiv Gandhi Mahavidyalaya</div>
+            </div>
+            <div class="course-tags-list">
+              <span class="course-mini-tag">State Exams</span>
+              <span class="course-mini-tag">Central Exams</span>
+              <span class="course-mini-tag">Arts Integration</span>
+            </div>
+            <div class="course-meta">
+              <span class="course-seats"><i class="fas fa-award"></i> Student Mentorship</span>
+              <a href="contact.html?course=competitive#enquiry" class="btn btn-primary btn-sm">Join Cell</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission Steps Section -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">How to Enroll</div>
+        <h2 class="section-title">Simple Admission Procedure</h2>
+        <p class="section-subtitle">Straightforward admission process designed to assist students and parents from Jagdishpur and surrounding regions.</p>
+      </div>
+
+      <div class="info-cards-grid">
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-file-alt"></i></div>
+          <h3>1. Application Submission</h3>
+          <p>Obtain the admission registration form from the college office on Shukul Bazar Road, Jagdishpur, or submit an inquiry online.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-clipboard-check"></i></div>
+          <h3>2. Document Verification</h3>
+          <p>Submit attested photocopies of High School (10th) & Intermediate (12th) marksheets, Transfer Certificate (TC), and Aadhaar Card.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-user-check"></i></div>
+          <h3>3. Subject Counseling</h3>
+          <p>Consult with our academic advisors to select optimal subject combinations in Bachelor of Arts or choose your M.A. / UPRTOU program.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-id-card"></i></div>
+          <h3>4. Enrollment Confirmation</h3>
+          <p>Complete fee deposition and receive your college identity card and syllabus booklet to begin your academic semester.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container" style="max-width: 860px;">
+      <div class="section-header">
+        <div class="section-badge">Questions & Answers</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Details about admission, fees, university affiliation, and open university programs.</p>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item active">
+          <div class="accordion-header">
+            <h4>Which university is Rajiv Gandhi Mahavidyalaya affiliated with?</h4>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </div>
+          <div class="accordion-body">
+            <p>Rajiv Gandhi Mahavidyalaya is permanently affiliated to <strong>Dr. Ram Manohar Lohia Awadh University, Ayodhya</strong>. Degrees awarded are fully recognized nationwide.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>What is the U.P. Rajarshi Tandon Open University (UPRTOU) Study Center?</h4>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </div>
+          <div class="accordion-body">
+            <p>The college hosts an official study center of UPRTOU, allowing local students, working individuals, and women to pursue various UG and PG degrees, diplomas, and certificates through flexible distance learning without travelling outside Jagdishpur.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>Is competitive examination coaching available for B.A. students?</h4>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </div>
+          <div class="accordion-body">
+            <p>Yes. As per the founding resolution of Pt. Shyam Lal Tiwari, coaching for central and state-level competitive examinations (UPPCS, SSC, Railway, Banking, Teaching) is integrated within the Arts faculty.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>Who can I contact for admission inquiries?</h4>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </div>
+          <div class="accordion-body">
+            <p>You can directly contact <strong>Dr. Neelam Mishra, Principal (+91 91203 74882)</strong> or <strong>Shri Arun Kumar, CEO (+91 90266 74882)</strong>, or visit the campus office on Shukul Bazar Road, Jagdishpur, Amethi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Secure Your Higher Education in Jagdishpur</h2>
+        <p>Admissions for B.A., M.A. programs and UPRTOU Open University courses are currently in progress. Apply today!</p>
+        <div class="cta-actions">
+          <a href="contact.html#enquiry" class="btn btn-secondary btn-lg">Apply for Course Now <i class="fas fa-paper-plane"></i></a>
+          <a href="about.html" class="btn btn-outline-white btn-lg">Read College Story <i class="fas fa-book-open"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">RAJIV GANDHI</span>
+              <span class="brand-sub">MAHAVIDYALAYA &bull; JAGDISHPUR</span>
+            </div>
+          </a>
+          <p class="footer-about">
+            Rajiv Gandhi Mahavidyalaya is a premier degree institution established in 1998 by Pt. Shyam Lal Tiwari under Sarvodaya Sewa Sansthan, permanently affiliated to Dr. Ram Manohar Lohia Awadh University, Ayodhya.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us & Founder</a></li>
+            <li><a href="courses.html"><i class="fas fa-angle-right"></i> Academic Courses</a></li>
+            <li><a href="faculty.html"><i class="fas fa-angle-right"></i> Leadership & Faculty</a></li>
+            <li><a href="gallery.html"><i class="fas fa-angle-right"></i> Campus Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact & Map</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Academic Programs</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html#ba"><i class="fas fa-angle-right"></i> Bachelor of Arts (B.A.)</a></li>
+            <li><a href="courses.html#fine-arts"><i class="fas fa-angle-right"></i> Drawing (Fine Art) - UG</a></li>
+            <li><a href="courses.html#music"><i class="fas fa-angle-right"></i> Music (Vocal/Inst.) - UG</a></li>
+            <li><a href="courses.html#ma-hindi"><i class="fas fa-angle-right"></i> M.A. Hindi Literature</a></li>
+            <li><a href="courses.html#ma-soc"><i class="fas fa-angle-right"></i> M.A. Sociology</a></li>
+            <li><a href="courses.html#uprtou"><i class="fas fa-angle-right"></i> UPRTOU Study Center</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Campus Address</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Rajiv Gandhi Mahavidyalaya, Shukul Bazar Road, Jagdishpur, District Amethi, Uttar Pradesh &ndash; 227809, India</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <p><a href="tel:+919120374882">+91 91203 74882</a> (Principal)<br><a href="tel:+919026674882">+91 90266 74882</a> (CEO)</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <p><a href="mailto:admissions@rgdcjagdishpur.edu.in">admissions@rgdcjagdishpur.edu.in</a></p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-shield-alt"></i>
+            <p>Affiliated to Dr. Ram Manohar Lohia Awadh University, Ayodhya</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p>&copy; <span class="current-year">2026</span> Rajiv Gandhi Mahavidyalaya. All Rights Reserved.</p>
+          <p>Designed with Modern Educational Standards &bull; Ready for GitHub Pages</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
