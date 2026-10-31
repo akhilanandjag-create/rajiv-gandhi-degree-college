@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://akhilanandjag-create.github.io/rajiv-gandhi-degree-college/sitemap.xml
+
